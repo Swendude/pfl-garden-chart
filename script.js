@@ -32,8 +32,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   // Create chart
   const ctx = document.getElementById("gardenChart");
 
-  console.log(axisLabels);
-
   new Chart(ctx, {
     type: "line",
     data: {
@@ -41,6 +39,20 @@ document.addEventListener("DOMContentLoaded", async () => {
       datasets: datasets
     },
     options: {
+      interaction: {
+        mode: "nearest",
+        axis: "x",
+        intersect: false
+      },
+      elements: {
+        point: {
+          radius: 0
+        },
+        line: {
+          borderWidth: 1
+        }
+      },
+
       scales: {
         x: {
           type: "time",
