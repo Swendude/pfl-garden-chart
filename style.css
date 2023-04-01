@@ -1,0 +1,24 @@
+html {
+  font-family: monospace;
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#gardenChart {
+  width: 800px;
+}
+
+.chart {
+  margin: 4rem;
+}

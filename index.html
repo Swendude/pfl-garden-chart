@@ -1,0 +1,29 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🌱 PFL Garden Chart</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@^4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.3.0/build/global/luxon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@^1"></script>
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>🌱 PFL Garden Chart</h1>
+    <div class="chart">
+        <canvas id="gardenChart"></canvas>
+    </div>
+    <p>Data loaded from <a
+            href="https://gateway.ipfs.io/ipfs/QmQNExCQ4VXKNJkTVTWUeFA5mDKyvJ2CFfB6LnXit3WqNL/data/garden-data.csv">this
+            CSV</a> file which can be downloaded over <a
+            href="https://en.wikipedia.org/wiki/InterPlanetary_File_System">IPFS</a>.</p>
+    <p>Data collected from <a href="https://twitter.com/permanentfuture">Permanent Future Lab</a>(Utrecht location)</p>
+</body>
+
+</html>
